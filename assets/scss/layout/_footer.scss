@@ -1,0 +1,12 @@
+.footer {
+	&__container {
+		font-family: $font_family-secondary;
+		justify-items: center;
+		font-size: 12px;
+		color: var(--color-footer-color);
+
+		:last-child {
+			font-size: 15px;
+		}
+	}
+}

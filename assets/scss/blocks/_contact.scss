@@ -1,0 +1,34 @@
+.contact {
+
+    &__info-image {
+        grid-row: 1;
+    }
+
+    &__info-text {
+        grid-row: 1;
+        width: fit-content;
+        height: fit-content;
+        justify-self: center;
+    }
+
+    &__form {
+
+        &-group--modifier {
+            gap: 3px;
+        }
+
+        label {
+            font-weight: 700;
+        }
+        
+        input,
+        textarea {
+            margin-bottom: 15px;
+            border: 2px solid var(--color-grey-200);
+        }
+
+        input {
+            height: 49px;
+        }
+    }
+}

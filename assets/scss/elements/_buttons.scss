@@ -1,0 +1,75 @@
+.c-button {
+	display: inline-block;
+	margin-bottom: 0;
+	margin-right: 4px;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none;
+	border-radius: 2px;
+	white-space: nowrap;
+	font-size: 16px;
+	padding: 0 16px;
+	font-weight: 600;
+	cursor: pointer;
+	user-select: none;
+	transition: 0.3s ease-out;
+
+	&--primary,
+	&--secondary {
+		display: flex;
+		align-items: center; 
+		gap: 20px;
+		font-weight: 600;
+		transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+		cursor: pointer;
+		
+		a {
+			color: #000;
+		}
+		
+		// &:hover {
+			// 	// background: var(--color-green-button-hover);
+			// 	// color: #fff;
+			// }
+		}
+		
+		&--primary {
+			border: none;
+			background: var(--color-button-color);
+		
+		a {
+			color: #fff;
+		}
+	}
+
+	&--secondary {
+		background-color: #fff;
+		border: 1px solid var(--color-button-color);
+		box-shadow:
+        -2px 0px 4px -1px var(--color-button-color), /* Left border shadow */
+        0px -2px 4px -1px var(--color-button-color); /* Top border shadow */
+;
+		a{
+			color: var(--color-button-color);
+		}
+
+		svg {
+			color: var(--color-button-color);
+		}
+	}
+}
+
+button:disabled,
+.button--disabled {
+	opacity: 0.7;
+	pointer-events: none;
+	box-shadow: none;
+
+	&:hover {
+		color: inherit;
+		background-color: inherit;
+	}
+}

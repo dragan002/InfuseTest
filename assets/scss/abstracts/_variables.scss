@@ -1,0 +1,84 @@
+/* Breakpoints */
+$breakpoints: (
+	xs: 440px,
+	sm: 640px,
+	md: 768px,
+	lg: 1024px,
+	xl: 1354px,
+	xxl: 1536px,
+);
+
+/* Colors */
+$colors: (
+	primary: #1B75BB,
+	secondary: #0a5a46,
+	dark: #333,
+	light: #fff,
+	button-color: #ff0000,
+	footer-color: #747474,
+	grey-100: #787878,
+	grey-200: #e2e2e2,
+	grey-300: #f3f8fc,
+	grey-400: #ced4da,
+);
+
+// take $colors array and create CSS variables from it on the :root and also helper classes
+@each $name, $color in $colors {
+	:root {
+		--color-#{$name}: #{$color};
+	}
+
+	.color-#{'' + $name} {
+		color: $color;
+	}
+
+	.background-#{'' + $name} {
+		background-color: $color;
+	}
+}
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+.lexend {
+	font-family: 'Lexend', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+  }
+  
+  /* Specific classes for different font weights */
+  .lexend-thin {
+	font-weight: 100;
+  }
+  
+  .lexend-light {
+	font-weight: 300;
+  }
+  
+  .lexend-regular {
+	font-weight: 400;
+  }
+  
+  .lexend-medium {
+	font-weight: 600;
+  }
+  
+  .lexend-bold {
+	font-weight: 700;
+  }
+  
+  .lexend-black {
+	font-weight: 900;
+  }
+  $font_family: 'lexend';
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.roboto-regular {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+$font_family-secondary: 'roboto-regular';
+
+/* Spacings */
+$spacing-unit: 8px;
+$spacing-grid: $spacing-unit * 2;

@@ -1,0 +1,28 @@
+.about-us {
+
+    h1 {
+        text-align: center;
+    }
+
+    &__background-image {
+        display: none;
+    }
+
+    &__cards > :nth-child(2) {
+        border-block: 1px solid var(--color-grey-200);
+    }
+
+    &__card {
+        text-align: center;
+
+        img {
+            grid-column: 6 / span 2;
+        }
+
+        p {
+            font-weight: 300;
+            padding-left: 56px;
+            padding-right: 56px;
+        }
+    }
+}
