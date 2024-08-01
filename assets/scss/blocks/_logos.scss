@@ -1,12 +1,16 @@
 .logos {
-    
-    #hp,
-    #aws {
-        width: 60%;
-        justify-self: center;
+
+    &__desktop {
+        display: none;
+
+        @media (min-width: map-get($breakpoints, md)) {
+			display: initial;
+		}
     }
 
-    &__container {
-        align-items: center;
+    &__mobile {
+        @media (min-width: map-get($breakpoints, md)) {
+            display: none;
+		}
     }
 }

@@ -14,10 +14,7 @@
 	}
 
 	&--narrow {
-		max-width: calc(900px + $spacing-grid * 2);
+		max-width: calc(1104px + $spacing-grid * 2);
 	}
 
-	.wrapper {
-		padding: 0;
-	}
 }

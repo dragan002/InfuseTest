@@ -30,6 +30,11 @@
 			width: initial;
 			font-size: 12px;
         }
+
+		@media (min-width: map-get($breakpoints, xl)) {
+			font-size: 16px;
+			font-weight: 600;
+		}
 	}
 
 	&__off-screen-menu.active {
@@ -95,6 +100,16 @@
 
 		@media (min-width: map-get($breakpoints, md)) {
 			align-items: center;
+		}
+
+	}
+	@media (min-width: map-get($breakpoints, xl)) {
+		ul > :nth-child(-n+4) {
+			justify-self: start;
+		}
+
+		ul > * {
+			width: max-content;
 		}
 	}
 
