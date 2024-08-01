@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -100,37 +102,43 @@
             <h1>Years of Experience & Deep Expertise</h1>
         </div>
             <div class="about-us__content grid">
-                <img src="assets/logos/bg.jpg" alt="" class="about-us__background col-span-full">
+                <img src="assets/logos/bg.jpg" alt="" class="about-us__background col-span-full" alt="not available">
                 <img src="assets/logos/Group 39627.png" class="about-us__desktop background-light pt-4 pb-4 pr-4 pl-4 col-start-7 col-end-13" alt="">
             </div>
             <img src="assets/logos/Group 39646.png" class="about-us__mobile" alt="">
     </div>
 
-    <div class="gtmStrategies pt-8 pb-8">
-        <div class="wrapper wrapper--narrow">
-            <h1>How We Turn Clients’ GTM Strategies Into Success</h1>
-
-            <div class="gtmStrategies__cards">
-                <div class="gtmStrategies__card">
+<div class="gtmStrategies pt-8 pb-8">
+    <div class="wrapper wrapper--narrow">
+        <h1>HOW WE TURN CLIENTS’ GTM STRATEGIES INTO SUCCESS</h1>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide gtmStrategies__card">
                     <p>The programs have run more efficiently than they promised making it easy for me to hit my targets in advance of my deadlines</p>
                     <span>Marketing and Advertising</span>
                     <p>Demand Content</p>
                 </div>
 
-                <div class="gtmStrategies__card">
+                <div class="swiper-slide gtmStrategies__card">
                     <p>This was a truly full-service experience. All I had to do was provide information about the target audiences and access to our library of content.</p>
                     <span>Software Development</span>
                     <p>Demand Intent</p>
                 </div>
 
-                <div class="gtmStrategies__card">
-                    <p>Consistency of lead flow month over month. The data and leads we have gotten have been  quite solid and sales' initial feedback is positive.</p>
-                    <span>Information Technology  and Services</span>
+                <div class="swiper-slide gtmStrategies__card">
+                    <p>Consistency of lead flow month over month. The data and leads we have gotten have been quite solid and sales' initial feedback is positive.</p>
+                    <span>Information Technology and Services</span>
                     <p>Demand Convert</p>
                 </div>
             </div>
+            <!-- Add navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
         </div>
     </div>
+</div>
+
+
 </main>
 
 <footer>
@@ -143,6 +151,25 @@
         </div>
     </div>
 </footer>
+
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var mySwiper = new Swiper('.swiper-container', {
+        loop: true,
+        slidesPerView: 1,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        spaceBetween: 30
+    });
+});
+</script>
+
 
     <script>
         const hamburgerMenu = document.querySelector('.header__hamburger-menu');

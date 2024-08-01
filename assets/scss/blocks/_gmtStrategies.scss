@@ -8,6 +8,11 @@
 
     h1 {
         text-align: center;
+
+        @media (min-width: map-get($breakpoints, lg)) {
+            text-align: left;
+            font-size: 54px;
+        }
     }
 
     span {
@@ -19,3 +24,14 @@
         font-weight: 300;
     }
 }
+
+
+.swiper-container {
+    width: 600px;
+    overflow: hidden;
+}
+
+.buttons {
+    position: relative;
+}
+

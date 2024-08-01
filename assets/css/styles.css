@@ -6924,10 +6924,25 @@ h6,
 .gtmStrategies h1 {
   text-align: center;
 }
+@media (min-width: 1024px) {
+  .gtmStrategies h1 {
+    text-align: left;
+    font-size: 54px;
+  }
+}
 .gtmStrategies span {
   font-weight: 500;
   color: #000;
 }
 .gtmStrategies p {
   font-weight: 300;
+}
+
+.swiper-container {
+  width: 600px;
+  overflow: hidden;
+}
+
+.buttons {
+  position: relative;
 }
