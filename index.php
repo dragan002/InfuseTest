@@ -96,7 +96,9 @@
     </div>
 
     <div class="about-us">
-        <h1>Years of Experience & Deep Expertise</h1>
+        <div class="wrapper wrapper--narrow">
+            <h1>Years of Experience & Deep Expertise</h1>
+        </div>
             <div class="about-us__content grid">
                 <img src="assets/logos/bg.jpg" alt="" class="about-us__background col-span-full">
                 <img src="assets/logos/Group 39627.png" class="about-us__desktop background-light pt-4 pb-4 pr-4 pl-4 col-start-7 col-end-13" alt="">
