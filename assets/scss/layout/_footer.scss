@@ -8,5 +8,10 @@
 		:last-child {
 			font-size: 15px;
 		}
+
+		@media (min-width: map-get($breakpoints, md)) {
+			padding-top: 20px;
+			border-top: 1px solid var(--color-footer-color);
+		}
 	}
 }

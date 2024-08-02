@@ -1,5 +1,9 @@
 .gtmStrategies {
 
+    .wrapper {
+        position: relative;
+    }
+
     &__card {
         background-color: var(--color-grey-300);
         margin-block: 1rem;
@@ -27,11 +31,36 @@
 
 
 .swiper-container {
-    width: 600px;
-    overflow: hidden;
+
+    @media (min-width: map-get($breakpoints, lg)) {
+        width: 600px;
+        overflow: hidden;
+    }
+    .swiper-wrapper {
+        display: block;
+    
+        @media (min-width: map-get($breakpoints, lg)) {
+            display: flex;
+        }
+    }
 }
 
-.buttons {
-    position: relative;
+.swiper-button-prev::after, .swiper-rtl .swiper-button-next::after,
+.swiper-button-next::after, .swiper-rtl .swiper-button-prev::after {
+    color: var(--color-grey-100);
 }
+
+.swiper-buttons {
+
+    display: none;
+
+    @media (min-width: map-get($breakpoints, lg)) {
+        position: absolute;
+        right: 24px;
+        top: 19%;
+        display: flex;
+        gap: 15px;
+    }
+}
+
 

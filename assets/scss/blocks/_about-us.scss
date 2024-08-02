@@ -2,6 +2,7 @@
 
     h1 {
         text-align: center;
+        line-height: 44px;
 
         @media (min-width: map-get($breakpoints, md)) {
             text-align: left;

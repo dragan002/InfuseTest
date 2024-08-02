@@ -21,7 +21,7 @@
 		position: fixed;
 		top: 0;
 		right: -640px;
-		background: chartreuse;
+		background: #ddf098;
 
 		@media (min-width: map-get($breakpoints, sm)) {
             position: initial;
@@ -102,15 +102,23 @@
 			align-items: center;
 		}
 
+		
 	}
 	@media (min-width: map-get($breakpoints, xl)) {
 		ul > :nth-child(-n+4) {
 			justify-self: start;
 		}
 
-		ul > * {
+		button {
 			width: max-content;
 		}
 	}
-
+	li {
+		width: max-content;
+		a {
+			display: flex;
+			gap: 8px;
+			color: var(--color-primary);
+		}
+	}
 }

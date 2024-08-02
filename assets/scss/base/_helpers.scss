@@ -225,7 +225,7 @@
 }
 
 @each $breakpoint, $value in $breakpoints {
-    @for $i from 0 through 13 {
+    @for $i from 0 through 20 {
         // Responsive margin all sides
         @include breakpoint($breakpoint) {
             .#{$breakpoint}-m-#{$i} {
