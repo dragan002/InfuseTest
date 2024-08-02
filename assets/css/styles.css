@@ -8012,6 +8012,23 @@ h6,
   font-weight: 300;
 }
 
+.gtmStrategies__quote {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .gtmStrategies__quote {
+    display: block;
+    height: 150px;
+    position: absolute;
+    z-index: 1;
+    top: 51px;
+    left: 200px;
+  }
+}
+
+.swiper-container {
+  position: relative;
+}
 @media (min-width: 1024px) {
   .swiper-container {
     width: 600px;

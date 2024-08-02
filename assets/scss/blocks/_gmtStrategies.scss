@@ -29,8 +29,21 @@
     }
 }
 
+.gtmStrategies__quote {
+    display: none;
+    
+    @media (min-width: map-get($breakpoints, lg)) {
+     display: block;
+     height: 150px;
+     position: absolute;
+     z-index: 1;
+     top: 51px;
+     left: 200px;
+    }
+}
 
 .swiper-container {
+    position: relative;
 
     @media (min-width: map-get($breakpoints, lg)) {
         width: 600px;

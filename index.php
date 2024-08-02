@@ -141,8 +141,8 @@
                     <span>Information Technology and Services</span>
                     <p>Demand Convert</p>
                 </div>
-
             </div>
+            <img src="assets/logos/quotes.svg" alt="" class="gtmStrategies__quote"
         </div>
     </div>
 </div>
